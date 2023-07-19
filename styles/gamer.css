@@ -56,25 +56,23 @@ header nav > ul {
 }
 
 /* banner styles */
-/* .banner-section{
-    display: flex;
-    justify-content: space-between;
 
-} */
 .banner-section{
-    /* display: flex; */
-    
-    
+    display: flex;
 }
-.banner-img{
-    
+
+
+.img-one{
+    margin-left: 70px;
+    width: 550px;
+    margin-top: 50px;
 }
 .banner-content {
     background-image: url(../images/Group\ 14.png);
     background-repeat: no-repeat;
-    max-width: 901px;
+    background-size: 100% 600px;
     align-items: center;
-    padding: 150px 300px 150px 240px;
+    padding: 100px 200px 150px 150px;
 }
 
 .banner-text h2 {
@@ -102,46 +100,51 @@ header nav > ul {
 
 .banner-pgraph {
     display: flex;
+    
 }
 #play-btn, #no-download, #user{
     color: #FF42A5;
 }
 
-.sign-in {
+.sign-in{
     border-radius: 48px;
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-    border: 0;
-    padding: 21px 40px;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
 }
-
-.go {
+.go{
     border-radius: 48px;
-    background: #4EC5F7;
-    border: 0;
+background: #4EC5F7;
+}
+.go, .sign-in{
     padding: 21px 40px;
-    margin-left: 24px;
-
-}
-.sign-in, .go{
-   color: #FFF;
-   font-size: 1.25rem;
-   font-weight: 600;
+    border: 0;
+    color:#FFFFFF
 }
 
-.kibriya{
-    display: none;
-}
 /* responsive section  */
 
 /* mobile device */
 @media screen and (max-width:576px) {
 
     header,
-    header nav > ul 
+    header nav > ul
     {
         flex-direction: column;
     }
-    
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        background-size: 100% 100%;
+        padding: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .img-one{
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
 }
 
 /* tablet */
@@ -155,5 +158,13 @@ header nav > ul {
     header nav > ul {
         gap: 30px;
         
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        margin-top: 40px;
+        margin-right: 40px;
+        margin-left: 40px;
     }
 }
