@@ -264,6 +264,30 @@ header nav>ul {
     right: 150px;
 }
 
+/* <!-- more game section  --> */
+
+.more-games  {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 120px;
+   gap: 25px;
+}
+.gamebox{
+    display: flex;
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+background: #FFF;
+}
+.gamebox h6{
+    color: #0B0223;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 20px;
+}
 /* footer styles */
 
 footer {
